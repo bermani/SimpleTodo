@@ -26,9 +26,19 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+User can **view a list of todo items**
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='./view_list.gif' title='User can view a list of todo items' width='' alt='Video walkthrough of a user viewing a list of todo items' />
+
+User can **successfully add and remove items** from the todo list
+
+<img src='./add_and_remove.gif' title='User can successfully add and remove items from the todo list' width='' alt='Video walkthrough of a user adding and removing items from the todo list' />
+
+User's **list of items persisted** upon modification and and retrieved properly on app restart
+
+<img src='./items_persist.gif' title='User\'s list of items persisted upon modification and retrieved properly on app restart' width='' alt='Video walkthrough of a user\'s list items persisting and being retrieved properly on app restart' />
+
+GIFs created with [Kap](https://getkap.co/).
 
 ## Notes
 
