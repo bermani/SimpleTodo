@@ -36,7 +36,7 @@ User can **successfully add and remove items** from the todo list
 
 User's **list of items persisted** upon modification and and retrieved properly on app restart
 
-<img src='./items_persist.gif' title='User\'s list of items persisted upon modification and retrieved properly on app restart' width='' alt='Video walkthrough of a user\'s list items persisting and being retrieved properly on app restart' />
+<img src='./items_persist.gif' title="User's list of items persisted upon modification and retrieved properly on app restart" width='' alt="Video walkthrough of a user's list items persisting and being retrieved properly on app restart" />
 
 GIFs created with [Kap](https://getkap.co/).
 
