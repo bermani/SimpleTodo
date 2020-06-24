@@ -61,6 +61,7 @@ GIFs created with [Kap](https://getkap.co/).
 ## Notes
 
 Here are some various issues and challenges I encountered while building the app.
+
 - Git couldn't be installed manually due to a network error, I had to download a packaged version
 - The simulator wouldn't start until I approved through the Santa system
 - The `FileUtils` module was being imported incorrectly. Android Studio automatically imported a built-in class called FileUtils when I needed to import the one from Apache Commons. I couldn't figure out why the `readLines()` function could not be found until I realized that Android Studio imported the wrong class.
