@@ -93,12 +93,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String todoItem = editItem.getText().toString();
-                // Add item to the model
-                items.add(todoItem);
-                // Notify adapter that an item is inserted
-                itemsAdapter.notifyItemInserted(items.size() - 1);
-                editItem.setText("");
-                saveChanges("Item was added");
+                if (!todoItem.isEmpty()) {
+                    // Add item to the model
+                    items.add(todoItem);
+                    // Notify adapter that an item is inserted
+                    itemsAdapter.notifyItemInserted(items.size() - 1);
+                    editItem.setText("");
+                    saveChanges("Item was added");
+                } else {
+                    Toast.makeText(getApplicationContext(), "Please input text into the item text box", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
