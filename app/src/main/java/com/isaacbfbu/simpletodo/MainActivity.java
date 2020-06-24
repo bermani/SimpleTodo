@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 items.remove(position);
                 // Notify the adapter
                 itemsAdapter.notifyItemRemoved(position);
-                Toast.makeText(getApplicationContext(), "Item was removed", Toast.LENGTH_SHORT).show();
-                saveItems();
+                saveChanges("Item was removed");
             }
         };
 
@@ -84,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 // Notify adapter that an item is inserted
                 itemsAdapter.notifyItemInserted(items.size() - 1);
                 editItem.setText("");
-                Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
-                saveItems();
+                saveChanges("Item was added");
             }
         });
     }
@@ -102,11 +100,16 @@ public class MainActivity extends AppCompatActivity {
             // notify the adapter
             itemsAdapter.notifyItemChanged(position);
             // persist the changes
-            saveItems();
-            Toast.makeText(getApplicationContext(),"Item updated successfully!", Toast.LENGTH_SHORT).show();
+            saveChanges("Item updated successfully");
         } else {
             Log.w("MainActivity","Unknown call to onActivityResult");
         }
+    }
+
+    // Saves changes into the data file and notifies the user with a Toast
+    private void saveChanges(String message) {
+        saveItems();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
     private File getDataFile() {

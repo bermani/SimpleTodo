@@ -20,7 +20,7 @@ The following **stretch** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] List anything else that you can get done to improve the app functionality!
+- [X] Refactored repeated code into the `saveChanges()` method
 
 ## Video Walkthrough
 
