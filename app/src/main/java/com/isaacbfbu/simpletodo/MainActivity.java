@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import org.apache.commons.io.FileUtils;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.app.AlertDialog;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,12 +49,25 @@ public class MainActivity extends AppCompatActivity {
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener() {
             @Override
-            public void onItemLongClicked(int position) {
-                // Delete item from the model
-                items.remove(position);
-                // Notify the adapter
-                itemsAdapter.notifyItemRemoved(position);
-                saveChanges("Item was removed");
+            public void onItemLongClicked(final int position) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Are you sure you want to delete '"+ items.get(position) +"'")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // Delete item from the model
+                                items.remove(position);
+                                // Notify the adapter
+                                itemsAdapter.notifyItemRemoved(position);
+                                saveChanges("Item was removed");
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // User cancelled the dialog
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         };
 
