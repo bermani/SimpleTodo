@@ -20,9 +20,9 @@ The following **stretch** features are implemented:
 
 The following **additional** features are implemented:
 
-- [X] Refactored repeated code into the `saveChanges()` method
-- [X] User receives an **alert dialog to stop them from accidentally deleting an item** from the todo list
-- [X] User **cannot add an empty item** to the list and will receive a helpful message when trying to do so
+- [x] Refactored repeated code into the `saveChanges()` method
+- [x] User receives an **alert dialog to stop them from accidentally deleting an item** from the todo list
+- [x] User **cannot add an empty item** to the list and will receive a helpful message when trying to do so
 
 ## Video Walkthrough
 
