@@ -26,7 +26,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of all implemented user stories:
+
+<img src='./full_walkthrough.gif' title='Full walkthrough of all implemented user stories' alt='Video walkthrough of creating, reading, updating, and deleting within the ToDo app' >
+
+Feature specific walkthroughs:
 
 User can **view a list of todo items**
 
