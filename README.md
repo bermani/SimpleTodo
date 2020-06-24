@@ -4,7 +4,7 @@
 
 Submitted by: **Isaac Berman**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -16,11 +16,11 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 
-- [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+- [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
@@ -37,6 +37,12 @@ User can **successfully add and remove items** from the todo list
 User's **list of items persisted** upon modification and and retrieved properly on app restart
 
 <img src='./items_persist.gif' title="User's list of items persisted upon modification and retrieved properly on app restart" width='' alt="Video walkthrough of a user's list items persisting and being retrieved properly on app restart" />
+
+User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+
+<img src='./edit_text.gif' title="User can tap a todo item in the list and bring up an edit screen for the todo item and then have any changes to the text reflected in the todo list" width='' alt="Video walkthrough of a user editing an item through the edit page" />
+
+
 
 GIFs created with [Kap](https://getkap.co/).
 
