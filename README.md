@@ -16,11 +16,11 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 
-- [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+- [x] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 The following **additional** features are implemented:
 
-- [X] List anything else that you can get done to improve the app functionality!
+- [x] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
@@ -41,8 +41,6 @@ User's **list of items persisted** upon modification and and retrieved properly 
 User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 <img src='./edit_text.gif' title="User can tap a todo item in the list and bring up an edit screen for the todo item and then have any changes to the text reflected in the todo list" width='' alt="Video walkthrough of a user editing an item through the edit page" />
-
-
 
 GIFs created with [Kap](https://getkap.co/).
 
